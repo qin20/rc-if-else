@@ -1,4 +1,4 @@
-[](# rc-if-else
+# rc-if-else
 
 React conditional rendering
 
@@ -56,4 +56,4 @@ render(){
 
 ## License
 
-rc-if-else is released under the MIT license.)
+rc-if-else is released under the MIT license.

@@ -1,0 +1,27 @@
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "plugins": ["import"],
+    "parser": "babel-eslint",
+    "globals": {
+        "pjcx": true
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "rules": {
+        "semi": "error",
+        "prefer-template": "error",
+        "indent": ["error", 4],
+        "react/prop-types": ["error", { "skipUndeclared": true, "ignore": ["children"] }],
+        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }]
+    }
+}

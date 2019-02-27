@@ -1,0 +1,46 @@
+{
+  "name": "rc-if-else",
+  "version": "1.0.0",
+  "description": "conditional rendering for react components",
+  "keywords": [
+    "react",
+    "react-if-else",
+    "if-else",
+    "conditional-rendering",
+    "show-hide-components"
+  ],
+  "files": [
+    "es",
+    "lib"
+  ],
+  "main": "./lib/index",
+  "module": "./es/index",
+  "author": "qinyuanbin",
+  "maintainers": [
+    "a591737386@163.com"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "release": "npm run transpile && standard-version && git push --follow-tags origin master && npm publish",
+    "prerelease": "npm run transpile && standard-version --prerelease && npm publish --tag prerelease",
+    "transpile": "cp -R src es & babel es -d lib --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinyuanbin/rc-if-else.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qinyuanbin/rc-if-else/issues"
+  },
+  "homepage": "https://github.com/qinyuanbin/rc-if-else#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.3"
+  }
+}

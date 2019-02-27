@@ -1,6 +1,6 @@
 {
   "name": "rc-if-else",
-  "version": "1.0.1-4",
+  "version": "1.0.1",
   "description": "conditional rendering for react components",
   "keywords": [
     "react",

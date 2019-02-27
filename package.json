@@ -1,6 +1,6 @@
 {
   "name": "rc-if-else",
-  "version": "1.0.1-0",
+  "version": "1.0.1-1",
   "description": "conditional rendering for react components",
   "keywords": [
     "react",
@@ -24,7 +24,7 @@
     "test": "jest",
     "release": "npm run transpile && standard-version && git push --follow-tags origin master && npm publish",
     "prerelease": "npm run transpile && standard-version --prerelease && npm publish --tag prerelease",
-    "transpile": "cp -R src es & babel es -d lib --copy-files"
+    "transpile": "rm -rf es/* lib/* & cp -R src es & babel es -d lib --copy-files"
   },
   "repository": {
     "type": "git",

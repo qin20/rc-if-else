@@ -8,17 +8,19 @@ import React from 'react';
 const cloneChildrenWithProps = (children, props) => {
     var { condition, withinIf, ...newProps } = props;
     return (
-        <React.Fragment>{
-            React.Children.map(children, child => {
-                if (typeof child === 'string') {
-                    return child;
-                }
-                if (child.type  === ElIf || child.type === Else) {
-                    return React.cloneElement(child, { withinIf, ...props }, child.props.children);
-                }
-                return React.cloneElement(child, newProps, child.props.children);
-            })
-        }</React.Fragment>
+        <>
+            {
+                React.Children.map(children, child => {
+                    if (typeof child === 'string' || !child.type) {
+                        return child;
+                    }
+                    if (child.type  === ElIf || child.type === Else) {
+                        return React.cloneElement(child, { withinIf, ...props }, child.props.children);
+                    }
+                    return React.cloneElement(child, newProps, child.props.children);
+                })
+            }
+        </>
     );
 };
 

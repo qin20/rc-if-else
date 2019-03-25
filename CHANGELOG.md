@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0-0"></a>
+# [1.1.0-0](https://github.com/qinyuanbin/rc-if-else/compare/v1.0.1...v1.1.0-0) (2019-03-25)
+
+
+### Bug Fixes
+
+* **bug:** error with react portal child ([bb3966f](https://github.com/qinyuanbin/rc-if-else/commit/bb3966f))
+
+
+### Features
+
+* **configs:** add project configs ([fc969ff](https://github.com/qinyuanbin/rc-if-else/commit/fc969ff))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/qinyuanbin/rc-if-else/compare/v1.0.1-4...v1.0.1) (2019-02-27)
 

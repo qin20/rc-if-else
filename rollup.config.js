@@ -2,7 +2,7 @@ const babel = require("rollup-plugin-babel");
 const { sizeSnapshot } = require("rollup-plugin-size-snapshot");
 
 export default [{
-    input: 'src/index.js',
+    input: 'src/index.jsx',
     output: {
         file: 'es/index.js',
         format: 'esm'
@@ -17,7 +17,7 @@ export default [{
         sizeSnapshot()
     ]
 }, {
-    input: 'src/index.js',
+    input: 'src/index.jsx',
     output: {
         file: 'lib/index.js',
         format: 'cjs'

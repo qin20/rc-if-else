@@ -1,6 +1,6 @@
 {
   "name": "rc-if-else",
-  "version": "1.1.0",
+  "version": "1.1.1-0",
   "description": "conditional rendering for react components",
   "keywords": [
     "react",
@@ -22,9 +22,9 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "release": "npm run transpile && standard-version && git push --follow-tags origin master && npm publish",
-    "prerelease": "npm run transpile && standard-version --prerelease && npm publish --tag prerelease",
-    "transpile": "rm -rf es lib && npx rollup -c"
+    "release": "npm run transpile && npx standard-version && git push --follow-tags origin master && npm publish",
+    "prerelease": "npm run transpile && npx standard-version --prerelease && npm publish --tag prerelease",
+    "transpile": "rm -rf es lib && tsc && npx rollup -c"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,7 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "@types/react": "^17.0.3",
     "rollup": "^1.3.1",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-size-snapshot": "^0.8.0"

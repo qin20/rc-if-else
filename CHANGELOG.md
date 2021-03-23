@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0-0](https://github.com/qinyuanbin/rc-if-else/compare/v1.1.1-0...v1.2.0-0) (2021-03-23)
+
+
+### Features
+
+* **code:** add typescript ([bdd2112](https://github.com/qinyuanbin/rc-if-else/commit/bdd211244bc8e0457026d3f5023e17648b367392))
+
 ### [1.1.1-0](https://github.com/qinyuanbin/rc-if-else/compare/v1.1.0...v1.1.1-0) (2021-03-23)
 
 <a name="1.1.0"></a>
